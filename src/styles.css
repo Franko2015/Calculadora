@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.background{
+  background-color: rgba(58, 52, 52, 0.619);
+}
+
+.bg-calculadora{
+  background-color: rgba(67, 61, 61, 0.619);
+}
+.bg-title{
+  background-color: rgba(67, 61, 61, 0.322);
+}
