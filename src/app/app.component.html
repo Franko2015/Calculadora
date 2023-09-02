@@ -1,27 +1,27 @@
 <div class="container mt-5 p-3">
-  <div class="text-white bg-calculadora card">
-  <h3 class="text-center text-white p-2">Calculadora con Angular</h3>
+  <div class="text-white bg-calculadora card display-4 rounded">
+  <h3 class="text-center p-2">Calculadora con Angular</h3>
     <div class="card-title bg-title p-2 m-2 text-right">
       <label>{{primerNum}}</label>&nbsp; {{operacion}} &nbsp;<label>{{segundoNum}}</label><div class="d-flex mx-auto">Total: {{total}}</div>
     </div>
     <div class="text-center card-body">
       <div class="d-flex row">
-        <div class="col bg-number btn btn-outline-primary m-2" *ngFor="let i of items.slice(0, 4)" (click)="calcular(i.valor)">{{i.valor}}</div>
+        <div class="col bg-number btn btn-primary m-2" *ngFor="let i of items.slice(0, 4)" (click)="calcular(i.valor)">{{i.valor}}</div>
       </div>
       <div class="d-flex row">
-        <div class="col bg-number btn btn-outline-primary m-2" *ngFor="let i of items.slice(4, 8)" (click)="calcular(i.valor)">{{i.valor}}</div>
+        <div class="col bg-number btn btn-primary m-2" *ngFor="let i of items.slice(4, 8)" (click)="calcular(i.valor)">{{i.valor}}</div>
       </div>
       <div class="d-flex row">
-        <div class="col bg-number btn btn-outline-primary m-2" *ngFor="let i of items.slice(8, 12)" (click)="calcular(i.valor)">{{i.valor}}</div>
+        <div class="col bg-number btn btn-primary m-2" *ngFor="let i of items.slice(8, 12)" (click)="calcular(i.valor)">{{i.valor}}</div>
       </div>
       <div class="d-flex row">
-        <div class="col bg-number btn btn-outline-primary m-2" *ngFor="let i of items.slice(12, 16)" (click)="calcular(i.valor)">{{i.valor}}</div>
+        <div class="col bg-number btn btn-primary m-2" *ngFor="let i of items.slice(12, 16)" (click)="calcular(i.valor)">{{i.valor}}</div>
       </div>
       <div class="d-flex row">
-        <div class="col bg-number btn btn-outline-primary m-2" *ngFor="let i of items.slice(16, 20)" (click)="calcular(i.valor)">{{i.valor}}</div>
+        <div class="col bg-number btn btn-primary m-2" *ngFor="let i of items.slice(16, 20)" (click)="calcular(i.valor)">{{i.valor}}</div>
       </div>
       <div class="d-flex row">
-        <div class="col bg-number btn btn-outline-primary m-2" *ngFor="let i of items.slice(20, 24)" [ngClass]="getCssClass(i.valor)" (click)="calcular(i.valor)">{{i.valor}}</div>
+        <div class="col bg-number btn btn-primary m-2" *ngFor="let i of items.slice(20, 24)" [ngClass]="getCssClass(i.valor)" (click)="calcular(i.valor)">{{i.valor}}</div>
       </div>
   </div>
   </div>
